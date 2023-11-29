@@ -1,0 +1,37 @@
+* {
+  font-family: monospace;
+}
+
+body {
+  background-color: #9EF8EE;
+  background-attachment: fixed;
+}
+
+#container {
+background-color: rgb(255, 255, 255);
+margin: auto;
+width: 500px;
+height: 200px;
+color: #0D0D0D;
+border-color: #0D0D0D;
+border-radius: 10px;
+padding: 10px;
+
+}
+
+
+button {
+  margin-top: 70px;
+  height: 30px;
+  width: 90px;
+  
+}
+
+.resultado {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20pt;
+}
+
+.pausado{
+  color: red;
+}

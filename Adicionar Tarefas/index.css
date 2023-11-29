@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(31, 31, 31);
+    font-family: monospace;
+    color: white;
+}
+
+* {
+    margin-left: 20px;
+}
+
+p {
+    color: white;
+    font-size: 2em;
+    
+}
+
+h1 {
+    color:#00ff7f;
+    font-size: 3em;
+    
+    
+}
+
+input {
+    height: 30px;
+    width: 300px;
+    background-color: rgb(31, 31, 31);
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 10px;
+    color: white;
+    border-color: #00ff7f;
+    
+}
+
+#botao {
+    background-color:#0c8b4c;
+    color: white;
+    height: 40px;
+    width: 90px;
+    border-radius: 10px;
+    border: none;
+    margin: 0px;
+}
+
+.textosListas {
+    margin-bottom: 24px;
+    font-size: 24px;
+}
