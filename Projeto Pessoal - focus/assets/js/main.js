@@ -33,5 +33,65 @@ function iniciaRelogio(){
  }
 
 
+let lista = document.getElementById("list");
+function adicionarTarefa(){
+   let texto = document.getElementById("task_name").value;
+   if(texto.length == 0){
+    function valorInvalido(){
+      let valorInvalidoTexto = "Não é possivel adicionar vazio";
+      let li = document.createElement("li"); li.className = "itensLista";
+      const elementoTexto = document.createTextNode(valorInvalidoTexto);
+      li.appendChild(elementoTexto);
+      lista.appendChild(li);
+   }
+   let time = setInterval(function(){
+      valorInvalido()
+    }, 1000)
+
+    setTimeout(function(){
+          clearInterval(time)
+          limpar()
+    }, 4000)}
+    else{
+   let itensLista = document.createElement("li"); itensLista.className = "itensLista";
+   const textElement = document.createTextNode(texto);
+   itensLista.appendChild(textElement);
+   lista.appendChild(itensLista);
+   CriarBotaoApagar(itensLista)
+   salvarTarefas()
+       }
+   document.getElementById("task_name").value = "";
+   
+ } 
+
+function CriarBotaoApagar(lista){
+   const botaoApagar = document.createElement('button')
+   botaoApagar.innerText = "Apagar";
+   botaoApagar.setAttribute('class', 'botaoApagar');
+   botaoApagar.setAttribute('title', 'clique para apagar task');
+   lista.appendChild(botaoApagar)
+   botaoApagar.addEventListener('click', function() { 
+      const liPai = botaoApagar.parentElement;
+      liPai.remove();});
+}
+function Apagartask(){
+      lista.removeChild(lista.firstChild);
+ }
+function limpar() {
+   let lista = document.getElementById("list");
+    while (lista.firstChild) {
+        lista.removeChild(lista.firstChild);
+    }}
+
+function PressEnter(event){
+      if(event.key === 'Enter'){
+        adicionarTarefa();
+      }
+}
+
+function salvarTarefas(){
+  const liTarefas = lista.querySelectorAll('li')
+  console.log(liTarefas)
+}
 
  

@@ -13,9 +13,7 @@
     padding: 0px;
 }
 
-body {
 
-}
 
 .nav {
     width: 100%;
@@ -60,7 +58,7 @@ body {
 h1 {
     padding-top: 10px;
     font-family: var(--fonte2);
-    font-size: 4vh;
+    font-size: 5vh;
     font-variant: small-caps;
     text-align: center;
     
@@ -110,3 +108,55 @@ section > p {
 .pausado{
     color: red;
   }
+
+#task_name {
+  width: 250px;
+  height: 30px;
+  font-family: monospace;
+  font-size: 13px;
+  margin: 10px;
+}
+
+.adicionar {
+    background-color:#0c8b4c;
+    color: white;
+    height: 30px;
+    width: 80px;
+    border-radius: 6px;
+    margin: 0px;
+}
+.limpar {
+    background-color:rgba(102, 102, 102, 0.781);
+    color: white;
+    height: 30px;
+    width: 80px;
+    border-radius: 6px;
+    margin-left: 5px;
+}
+
+#listaTarefas {
+    width: 430px;
+    height: 450px;
+    background-color: #cfcfcf75;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.itensLista {
+    margin-left: 20px;
+    font-family: monospace;
+    font-size: 3vh;
+    margin-top: 5px;
+}
+
+.botaoApagar {
+    background-color:rgba(231, 20, 20, 0.781);
+    color: white;
+    height: 20px;
+    width: 50px;
+    border: none;
+    font-size: small;
+    font-family: monospace;
+    margin-left: 10px;
+}
