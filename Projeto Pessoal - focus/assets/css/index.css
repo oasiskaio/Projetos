@@ -117,23 +117,6 @@ section > p {
   margin: 10px;
 }
 
-.adicionar {
-    background-color:#0c8b4c;
-    color: white;
-    height: 30px;
-    width: 80px;
-    border-radius: 6px;
-    margin: 0px;
-}
-.limpar {
-    background-color:rgba(102, 102, 102, 0.781);
-    color: white;
-    height: 30px;
-    width: 80px;
-    border-radius: 6px;
-    margin-left: 5px;
-}
-
 #listaTarefas {
     width: 430px;
     height: 400px;
@@ -143,20 +126,9 @@ section > p {
     padding: 20px;
 }
 
-.itensLista {
+.tarefas > li {
     margin-left: 20px;
     font-family: monospace;
     font-size: 1.7vh;
-    margin-top: 5px;
-}
-
-.botaoApagar {
-    background-color:rgba(231, 20, 20, 0.781);
-    color: white;
-    height: 20px;
-    width: 50px;
-    border: none;
-    font-size: small;
-    font-family: monospace;
-    margin-left: 10px;
+    margin-top: 3px;
 }
