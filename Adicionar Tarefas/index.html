@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adicionar numeros</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
-</head>
-<body>
-    <p>lista de tarefas</p>
-    <h1>Lista de tarefas do dia</h1>
-    <div>
-       <ul id="list">
+<html lang="pt-BR">
 
-       </ul>
-    </div>
-    <div>
-        <input type="text" placeholder="Adicionar tarefa" id="task_name" onkeypress="PressEnter(event)">
-    <button onclick="addNewTask()" id="botao">Adicionar</button>
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modelo</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <section class="container">
+    <h1>Lista de tarefas</h1>
+    <p>
+      <input type="text" class="input-tarefa">
+      <button class="btn-tarefa">Adicionar nova tarefa</button>
+    </p>
+
+    <ul class="tarefas"></ul>
+  </section>
+
+  <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
