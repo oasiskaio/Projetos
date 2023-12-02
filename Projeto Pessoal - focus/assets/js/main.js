@@ -45,13 +45,11 @@ function adicionarTarefa(){
       lista.appendChild(li);
    }
    let time = setInterval(function(){
-      valorInvalido()
-    }, 1000)
-
+      valorInvalido()}, 1000)
+      
     setTimeout(function(){
           clearInterval(time)
-          limpar()
-    }, 4000)}
+          limpar() }, 4000)}
     else{
    let itensLista = document.createElement("li"); itensLista.className = "itensLista";
    const textElement = document.createTextNode(texto);
