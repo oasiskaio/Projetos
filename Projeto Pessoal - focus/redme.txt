@@ -1,0 +1,5 @@
+-> adicionr ultima entrada
+-> mudar tema 
+-> botao de concluir tarefa 
+-> responsividade e stilos
+-> adicionar navegação
