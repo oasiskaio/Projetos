@@ -1,11 +1,12 @@
+// O constructor da classe chama o metodo eventos para evitar que os dados sejam perdidos
 class ValidaFormulario {
   constructor() {
-    this.formulario = document.querySelector('.formulario');
+    this.formulario = document.querySelector('.formulario');  // recebe o formulario
     this.eventos();
   }
 
   eventos() {
-    this.formulario.addEventListener('submit', e => {
+    this.formulario.addEventListener('submit', e => { // escute o evento de submit e dispare a função
       this.handleSubmit(e);
     });
   }
